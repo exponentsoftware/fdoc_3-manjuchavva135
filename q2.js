@@ -82,3 +82,17 @@ function Signup(user){
 	return "User added"
 
 }
+function signIn(user){
+
+    for(var i=0;i<users.length;i++){
+    if(users[i].username.toLowerCase()==user.username.toLowerCase()){
+                if(users[i].password==user.password){
+    
+                    return "Signed In";
+                }
+                else return "incorrect password"
+            }
+        
+    }
+    return "username incorrect"
+    }
