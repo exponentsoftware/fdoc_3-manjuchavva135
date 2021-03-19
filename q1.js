@@ -18,3 +18,8 @@ const student = {
         dataScience:['Python', 'R', 'D3.js']
     }
 }
+student.skills.frontEnd.push({'skill':'Bootstrap','level':8});
+student.skills.backEnd.push({'skill':'Express','level':9});
+student.skills.dataBase.push({'skill':'SQL','level':8});
+student.skills.dataScience.push('SQL');
+console.log(student.skills);
