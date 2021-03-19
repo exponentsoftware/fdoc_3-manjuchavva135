@@ -70,3 +70,15 @@ const users = [
     likes: ['fg12cy']
 }
 ];
+function Signup(user){
+
+	for(var i=0;i<users.length;i++){
+
+		if(users[i].username.toLowerCase()==user.username.toLowerCase()){
+			return "Username already exists"
+		}
+	}
+	users.push(user);
+	return "User added"
+
+}
